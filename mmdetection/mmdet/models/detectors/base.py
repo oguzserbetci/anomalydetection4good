@@ -91,6 +91,7 @@ class BaseDetector(nn.Module):
                     data,
                     result,
                     img_norm_cfg,
+                    out_file='show_result.jpg',
                     dataset=None,
                     score_thr=0.3):
         if isinstance(result, tuple):
@@ -139,4 +140,6 @@ class BaseDetector(nn.Module):
                 bboxes,
                 labels,
                 class_names=class_names,
-                score_thr=score_thr)
+                score_thr=score_thr,
+                show=False,
+                out_file=out_file)

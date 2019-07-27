@@ -5,6 +5,12 @@ def wider_face_classes():
     return ['face']
 
 
+def pipistrel_classes():
+    return [
+        'boat'
+    ]
+
+
 def voc_classes():
     return [
         'aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat',
@@ -83,6 +89,7 @@ def coco_classes():
 
 
 dataset_aliases = {
+    'pipistrel': ['pipistrel', 'bodensee'],
     'voc': ['voc', 'pascal_voc', 'voc07', 'voc12'],
     'imagenet_det': ['det', 'imagenet_det', 'ilsvrc_det'],
     'imagenet_vid': ['vid', 'imagenet_vid', 'ilsvrc_vid'],
